@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+:root {
+  --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  min-height: 1500px;
+}
+
+section#panel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#panel:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 9999;
+}
+
+section#panel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section#panel:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 9999;
+  mix-blend-mode: color;
+}
+
+#panelText {
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-size: 4em;
+  z-index: 2;
+}
+
+#road {
+  z-index: 3;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.container {
+  background-color: #f5f5f5;
+  width: 96%;
+  max-width: 117rem;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #fff;
+  position: relative;
+  z-index: 10000;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  margin-top: -15rem;
+}
+
+main h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+main .profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+main .profile-container .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .profile-container .profile .img-container {
+  width: 6rem;
+  height: 6rem;
+  background: url(../assets/img/Benjamin.jpg) no-repeat center center / cover;
+  border-radius: 0.5rem;
+}
+
+main .profile-container .profile .text {
+  margin: 0 1rem;
+  color: #5b5963;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.profile .text h3 {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.3rem 1.5rem;
+  background-color: #fd735a;
+  border-radius: 0.2rem;
+}
+
+main p {
+  color: #5b5963;
+  margin: 1rem 0;
+}
+
+main .content h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #5b5963;
+  margin: 2rem 0;
+}
+
+main .content .content-img-container-1 {
+  width: 100%;
+  height: 35rem;
+  background: url(../assets/img/img1.webp) no-repeat center center / cover;
+}
+main .content .content-img-container-2 {
+  width: 100%;
+  height: 35rem;
+  background: url(../assets/img/img2.jpg) no-repeat center center / cover;
+}
+main .content .content-img-container-3 {
+  width: 100%;
+  height: 35rem;
+  background: url(../assets/img/img3.jpg) no-repeat center center / cover;
+}
+blockquote {
+  font-size: 1.4rem;
+  padding: 1rem 2.8rem;
+  line-height: 1.6;
+  font-weight: 300;
+  box-shadow: inset 0.5rem 0 0 #fd735a;
+  background-color: #f5f5f5;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+}
+.tags p {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.tags a {
+  display: inline-block;
+  padding: 0.3rem 1.5rem;
+  background-color: #f5f5f5;
+  color: #5b5963;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+}
+
+footer {
+  text-align: center;
+  background: #0a2a43;
+  color: white;
+}
+
+.anglophone-version {
+  color: #fd735a;
+}
